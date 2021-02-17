@@ -133,21 +133,17 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  min-height: 600px;
-
-  background-color: var(--dark-back);
-  text-align: center;
-
-  /* background-image:;
-  height 
-  width 
-  background-size: cover;
-  background-position: center;
   margin-left: auto;
   margin-right: auto;
-  background-repeat: no-repeat; */
-  
-
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #C4C4C4;
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  text-align: center;
 }
 
 .hero-title {
@@ -174,6 +170,7 @@ img {
   
   background-color: var(--main-blue);
   color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   
   font-weight: 700;
   font-size: 16px;
