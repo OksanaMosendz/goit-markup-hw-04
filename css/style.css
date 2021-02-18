@@ -133,16 +133,18 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+ 
+  height: 600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  
+  background-image: linear-gradient( to bottom, rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg); 
 
-  min-height: 100%;
-  max-width: 100%;
   background-color: #C4C4C4;
-  background-image: url(../images/hero-bg.jpg);
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover; 
  
   text-align: center;
 }
@@ -279,6 +281,7 @@ img {
 
 .team-list-content {
   text-align: center;
+  padding: 30px 32px;
 }
 
 .team-list h3 {
@@ -291,23 +294,41 @@ img {
 
 .team-list p {
   margin: 0;
-
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
 
 }
 
+.links-list {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+}
+
+.link{
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: rosybrown;
+}
+
 /* Постоянные клиенты */
 .customers-list>li{
   flex-basis: calc(100% / 6 - 30px);
 
+  
+}
+
+.customers-list a {
+  display: inline-block;
   width: 170px;
   height: 90px;
- 
   border: 1px solid #AFB1B8;
-  border-radius: 4px;}
-
+  border-radius: 4px;
+}
 
 /* Подвал */
 .footer {
