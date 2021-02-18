@@ -250,6 +250,17 @@ img {
   flex-basis: calc(100% / 4 - 30px);
 }
 
+.fli::before {
+  content: "";
+  display: block;
+  height: 120px;
+  width: 270px;
+  background-color: var(--light-back);
+  background-image: url(../images/icons.svg/#antenna);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .features p {
   font-weight: 400;
   font-size: 14px;
