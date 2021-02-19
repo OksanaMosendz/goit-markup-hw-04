@@ -88,6 +88,8 @@ img {
 }
 
 .header-contacts a {
+  display: flex;
+
   color: var(--text-grey);
 
   font-weight: 500;
@@ -108,6 +110,13 @@ img {
 .header-contacts a:hover,
 .header-contacts a:focus {
   color: var(--main-blue);
+}
+
+.contact-icon {
+  align-self: center;
+  margin-right: 10px;  
+   
+  fill: currentColor;
 }
 
 /* Лого */
@@ -250,16 +259,16 @@ img {
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.fli::before {
+/* .fli::before {
   content: "";
   display: block;
   height: 120px;
   width: 270px;
   background-color: var(--light-back);
-  background-image: url(../images/icons.svg/#antenna);
+  background-image: url(../images/featurs/antenna-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
 .features p {
   font-weight: 400;
@@ -312,18 +321,31 @@ img {
 
 }
 
-.links-list {
+.social-links {
   display: flex;
   width: 206px;
   height: 44px;
   justify-content: space-between;
 }
 
-.link{
-  display: inline-block;
+.social-links a {
+  display: flex;
   height: 44px;
   width: 44px;
-  background-color: rosybrown;
+  align-items: center;
+  justify-content: center;
+  color: #AFB1B8;
+}
+
+.social-links a:hover, 
+.social-links a:focus {
+  color: var(--white);
+  background-color: var(--main-blue);
+  border-radius: 50%;
+}
+
+.link-icon {
+  fill: currentColor;
 }
 
 /* Постоянные клиенты */
@@ -386,13 +408,12 @@ img {
 /* Присоеденяйтесь */
 
 .join-us {
-  display: flex;
   margin-left: 70px;
 } 
 
-.join-list{
+/* .join-list{
   display: flex;
-}
+} */
 
 .join-title {
   font-weight: 700;
