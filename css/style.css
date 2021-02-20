@@ -360,21 +360,31 @@ img {
 
 }
 
-
-
 /* Постоянные клиенты */
 .customers-list>li{
   flex-basis: calc(100% / 6 - 30px);
-
   
 }
 
 .customers-list a {
-  display: inline-block;
+  display: flex;
   width: 170px;
   height: 90px;
-  border: 1px solid #AFB1B8;
+  color: #AFB1B8;
+  border: 1px solid;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-list a:hover, 
+.customers-list a:focus {
+  color: var(--main-blue);
+  outline: none;
+}
+
+.logo-icon { 
+  fill: currentColor;
 }
 
 /* Подвал */
@@ -433,8 +443,6 @@ img {
   margin-bottom: 20px;
   color: var(--white);
 }
-
-
 
 /* Портфолио */
 
