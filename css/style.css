@@ -231,7 +231,7 @@ img {
   margin-top: 30px;
 }
 
-/* Наши особености */
+/* Преимущества*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -283,6 +283,16 @@ img {
 
 .specialty-list>li {
   flex-basis: calc(100% / 3 - 30px);
+}
+
+.specialty-list .thumb {
+  height: 294px;
+}
+
+.specialty-list .img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 /* Ccылки на социальные сети */
@@ -490,9 +500,13 @@ img {
   background-color: var(--white);
 }
 
-.portfolio-list>li:hover,
-.portfolio-list>li:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+.portfolio-list a {display: block;}
+
+.portfolio-list a:hover,
+.portfolio-list a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
 
 .portfolio-list-content {
   padding: 20px 24px;
@@ -515,4 +529,5 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  color: var(--text-grey);
 }
