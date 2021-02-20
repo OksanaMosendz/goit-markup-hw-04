@@ -246,6 +246,16 @@ img {
   overflow: hidden;
 }
 
+.feature-icon {
+  display: flex;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--light-back);
+  align-items: center;
+  justify-content: center;
+}
+
 .features-list h3 {
   font-weight: 700;
   font-size: 14px;
@@ -258,17 +268,6 @@ img {
   width: 270px;
   flex-basis: calc(100% / 4 - 30px);
 }
-
-/* .fli::before {
-  content: "";
-  display: block;
-  height: 120px;
-  width: 270px;
-  background-color: var(--light-back);
-  background-image: url(../images/featurs/antenna-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
 
 .features p {
   font-weight: 400;
@@ -442,6 +441,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--white);
+  padding-top: 15px;
 }
 
 /* Портфолио */
